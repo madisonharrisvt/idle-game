@@ -1,0 +1,3 @@
+<ul>
+  <li *ngFor="let fishBox of fishStorage">({{fishBox.count}}) <strong [ngStyle]="{'color': fishBox.fish.rarity.color}">{{fishBox.fish.name}}</strong></li>
+</ul>

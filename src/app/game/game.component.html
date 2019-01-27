@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <span>Some kind of Idle Game</span>
+</mat-toolbar>
+<mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <div class="top-left">
+        <app-storage class="full-width"></app-storage>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="top-left">
+        <app-fishing class="full-width" [childMessage]="parentMessage"></app-fishing>
+      </div>
+    </mat-grid-tile>
+</mat-grid-list>  

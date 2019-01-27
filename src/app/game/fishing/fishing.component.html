@@ -1,0 +1,9 @@
+<div class="job">
+  <mat-icon fontSet="fa" fontIcon="fa-clipboard-check"></mat-icon>
+  <p>{{childMessage}}</p>
+  <button mat-stroked-button (click)="fish()">Cast Line</button>
+  <mat-chip-list>
+    <mat-chip>tacklebox ({{ fishCount }})</mat-chip>
+  </mat-chip-list>
+  <div class="mat-small" [@fadeInOut]=currentState>You caught a <strong [ngStyle]="{'color': color}">{{caughtFish}}</strong>!</div>
+</div>
